@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_03_20_035837) do
+ActiveRecord::Schema[7.2].define(version: 2025_03_20_125109) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -38,7 +38,9 @@ ActiveRecord::Schema[7.2].define(version: 2025_03_20_035837) do
     t.bigint "city_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "transit_agency_id", null: false
     t.index ["city_id"], name: "index_bus_routes_on_city_id"
+    t.index ["transit_agency_id"], name: "index_bus_routes_on_transit_agency_id"
   end
 
   create_table "buses", force: :cascade do |t|
@@ -76,4 +78,5 @@ ActiveRecord::Schema[7.2].define(version: 2025_03_20_035837) do
   add_foreign_key "bus_route_stops", "bus_routes"
   add_foreign_key "bus_route_stops", "stops"
   add_foreign_key "bus_routes", "cities"
+  add_foreign_key "bus_routes", "transit_agencies"
 end
