@@ -3,18 +3,18 @@
 <p>Country: <%= @city.country %></p>
 
 <h2>Bus Routes in <%= @city.name %></h2>
-<ul>
-  <% if @city.bus_routes.any? %>
+<% if @city.bus_routes.any? %>
+  <ul>
     <% @city.bus_routes.each do |route| %>
       <li>
         <%= route.name %> (Route Number: <%= route.route_number %>)
         <a href="<%= bus_route_path(route) %>">View Route</a>
       </li>
     <% end %>
-  <% else %>
-    <p>No bus routes available for this city.</p>
-  <% end %>
-</ul>
+  </ul>
+<% else %>
+  <p>No bus routes available for this city.</p>
+<% end %>
 
 <!-- Pagination Links for Routes -->
 <%= paginate @bus_routes %>
