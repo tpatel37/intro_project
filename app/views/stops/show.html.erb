@@ -3,17 +3,16 @@
 <p>Longitude: <%= @stop.longitude %></p>
 
 <h2>Routes Passing This Stop:</h2>
-<ul>
-  <% if @stop.bus_routes.any? %>
+<% if @stop.bus_routes.any? %>
+  <ul>
     <% @stop.bus_routes.each do |route| %>
       <li>
         <%= route.name %> (Route Number: <%= route.route_number %>)
         <a href="<%= bus_route_path(route) %>">View Route</a>
       </li>
     <% end %>
-  <% else %>
-    <p>No routes pass through this stop.</p>
-  <% end %>
-</ul>
-
+  </ul>
+<% else %>
+  <p>No routes pass through this stop.</p>
+<% end %>
 <a href="/stops">Back to Stops</a>

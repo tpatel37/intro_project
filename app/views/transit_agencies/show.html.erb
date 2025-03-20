@@ -2,17 +2,17 @@
 <p>Country: <%= @transit_agency.country %></p>
 
 <h2>Bus Routes Managed by This Agency:</h2>
-<ul>
-  <% if @transit_agency.bus_routes.any? %>
+<% if @transit_agency.bus_routes.any? %>
+  <ul>
     <% @transit_agency.bus_routes.each do |route| %>
       <li>
         <%= route.name %> (Route Number: <%= route.route_number %>)
         <a href="<%= bus_route_path(route) %>">View Route</a>
       </li>
     <% end %>
-  <% else %>
-    <p>No bus routes managed by this agency.</p>
-  <% end %>
-</ul>
+  </ul>
+<% else %>
+  <p>No bus routes managed by this agency.</p>
+<% end %>
 
 <a href="/transit_agencies">Back to Transit Agencies</a>
