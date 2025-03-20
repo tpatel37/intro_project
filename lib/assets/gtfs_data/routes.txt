@@ -1,0 +1,187 @@
+route_long_name,route_type,route_text_color,route_color,agency_id,route_id,route_url,route_desc,route_short_name
+New York Mills,3,FFFFFF,38A848,Centro,19490,,,Ut111
+Tops Shoppers,3,FFFFFF,ED2224,Centro,19719,,,Sy 92
+Wegmans Shopper,3,FFFFFF,38A848,Centro,19718,,,Sy 90
+Grant Blvd,3,FFFFFF,38A848,Centro,19713,,,Sy 80
+Salt Springs Rd,3,000000,82D3F2,Centro,19712,,,Sy 76
+Solvay,3,000000,82D3F2,Centro,19711,,,Sy 74
+Townsend St - East Colvin St,3,FFFFFF,7E3092,Centro,19710,,,Sy 72
+North Syracuse - Central Square,3,000000,82D3F2,Centro,19717,,,Sy 88
+Henry Clay Blvd,3,FFFFFF,8AC767,Centro,19716,,,Sy 86
+Mattydale,3,000000,E0C94A,Centro,19715,,,Sy 84
+Baldwinsville,3,FFFFFF,ED2224,Centro,19714,,,Sy 82
+James St - Minoa,3,FFFFFF,ED2224,Centro,19720,,,Sy323
+Wegmans Shoppers,3,FFFFFF,00FF00,Centro,19631,,,Aub 6
+Genesee Street,3,FFFFFF,ED2224,Centro,19748,,,Ut 24
+Mexico - Fulton,3,FFFFFF,D98C27,Centro,19399,,,Mex 3
+Fulton - West,3,FFFFFF,ED2224,Centro,19398,,,Ful 5
+Fulton - East,3,FFFFFF,38A848,Centro,19397,,,Ful 4
+College via Ellen St,3,FFFFFF,3C62AE,Centro,19409,,,Osw2D
+College via West Utica,3,FFFFFF,7E3092,Centro,19408,,,Osw2C
+College via 104,3,000000,E0C94A,Centro,19407,,,Osw2A
+Walmart via Brandonwood,3,000000,82D3F2,Centro,19406,,,Osw1D
+Walmart via Seneca Street,3,FFFFFF,8AC767,Centro,19405,,,Osw1C
+Walmart - Hamilton Homes,3,FFFFFF,38A848,Centro,19404,,,Osw1B
+Walmart via 104,3,000000,E0C94A,Centro,19403,,,Osw1A
+SUNY Oswego Green Route,3,FFFFFF,8AC767,Centro,19402,,,Osw11
+SUNY Oswego Blue Route,3,000000,82D3F2,Centro,19401,,,Osw10
+Price Chopper Shopper,3,FFFFFF,00FF00,Centro,19400,,,Osw09
+Erie Blvd West,3,FFFFFF,3C62AE,Centro,19469,,,Sy936
+East Genesee,3,FFFFFF,D98C27,Centro,19468,,,Sy931
+Destiny USA,3,FFFFFF,FF8000,Centro,19465,,,Sy909
+Long Branch Park,3,FFFFFF,FF8000,Centro,19464,,,Sy907
+Glenwood,3,FFFFFF,7E3092,Centro,19467,,,Sy926
+Teall Ave,3,000000,E0C94A,Centro,19466,,,Sy921
+Solvay,3,000000,82D3F2,Centro,19461,,,Sy874
+Willis Ave Lot,3,FFFFFF,FF8000,Centro,19460,,,Sy782
+State Fair - Hub,3,FFFFFF,FF8000,Centro,19463,,,Sy901
+Lakeview Park Special Events,3,FFFFFF,FF0000,Centro,19462,,,Sy882
+Price Chopper Shopper,3,FFFFFF,00FF00,Centro,19663,,,Osw09
+Mexico - Fulton,3,FFFFFF,D98C27,Centro,19662,,,Mex 3
+Bloomfield,3,FFFFFF,3C62AE,Centro,19418,,,Rome7
+Rome Hospital,3,FFFFFF,CD8ABB,Centro,19419,,,Rome9
+Oswego - Syracuse,3,000000,E0C94A,Centro,19410,,,Osw46
+WalMart,3,FFFFFF,ED2224,Centro,19414,,,Rome2
+Turin St.,3,FFFFFF,7E3092,Centro,19415,,,Rome4
+Price Chopper,3,FFFFFF,38A848,Centro,19416,,,Rome5
+Griffiss,3,FFFFFF,D98C27,Centro,19417,,,Rome6
+North Street,3,FFFFFF,7E3092,Centro,19366,,,Aub 3
+State Street,3,FFFFFF,D98C27,Centro,19367,,,Aub 4
+West Genesee,3,FFFFFF,38A848,Centro,19364,,,Aub 1
+Franklin,3,FFFFFF,3C62AE,Centro,19365,,,Aub 2
+Whitesboro,3,FFFFFF,38A848,Centro,19479,,,Ut 11
+Wilbur Ave,3,FFFFFF,ED2224,Centro,19474,,,Sy974
+Fay Road,3,FFFFFF,38A848,Centro,19472,,,Sy966
+Townsend,3,FFFFFF,ED2224,Centro,19473,,,Sy972
+Wegmans Shoppers,3,FFFFFF,00FF00,Centro,19368,,,Aub 6
+Auburn - Syracuse via Elbridge,3,FFFFFF,CD8ABB,Centro,19369,,,Aub38
+Destiny USA,3,FFFFFF,FF8000,Centro,19728,,,Sy909
+Auburn - Syracuse via Elbridge,3,FFFFFF,CD8ABB,Centro,19632,,,Aub38
+Teall Ave,3,000000,E0C94A,Centro,19729,,,Sy921
+Court St,3,FFFFFF,CD8ABB,Centro,19704,,,Sy 52
+Midland Ave - Valley Dr,3,FFFFFF,3C62AE,Centro,19705,,,Sy 54
+Park Hill,3,FFFFFF,917164,Centro,19706,,,Sy 58
+Manlius,3,FFFFFF,3C62AE,Centro,19707,,,Sy 62
+Drumlins - Nob Hill,3,FFFFFF,917164,Centro,19700,,,Sy 40
+Liverpool - Route 57,3,000000,E0C94A,Centro,19701,,,Sy 46
+Liverpool - Morgan Rd,3,FFFFFF,8AC767,Centro,19702,,,Sy 48
+Destiny USA,3,FFFFFF,38A848,Centro,19703,,,Sy 50
+Walmart - Hamilton Homes,3,FFFFFF,38A848,Centro,19667,,,Osw1B
+Walmart via 104,3,000000,E0C94A,Centro,19666,,,Osw1A
+SUNY Oswego Green Route,3,FFFFFF,8AC767,Centro,19665,,,Osw11
+SUNY Oswego Blue Route,3,000000,82D3F2,Centro,19664,,,Osw10
+Western Lights,3,FFFFFF,8AC767,Centro,19708,,,Sy 64
+East Fayette St - Erie Blvd,3,FFFFFF,8AC767,Centro,19709,,,Sy 68
+Fulton - West,3,FFFFFF,ED2224,Centro,19661,,,Ful 5
+Fulton - East,3,FFFFFF,38A848,Centro,19660,,,Ful 4
+Salt Springs Rd,3,000000,82D3F2,Centro,19449,,,Sy 76
+Solvay,3,000000,82D3F2,Centro,19448,,,Sy 74
+Park Hill,3,FFFFFF,917164,Centro,19443,,,Sy 58
+Midland Ave - Valley Dr,3,FFFFFF,3C62AE,Centro,19442,,,Sy 54
+Court St,3,FFFFFF,CD8ABB,Centro,19441,,,Sy 52
+Destiny USA,3,FFFFFF,38A848,Centro,19440,,,Sy 50
+Townsend St - East Colvin St,3,FFFFFF,7E3092,Centro,19447,,,Sy 72
+East Fayette St - Erie Blvd,3,FFFFFF,8AC767,Centro,19446,,,Sy 68
+Western Lights,3,FFFFFF,8AC767,Centro,19445,,,Sy 64
+Manlius,3,FFFFFF,3C62AE,Centro,19444,,,Sy 62
+SU - Destiny USA,3,FFFFFF,D98C27,Centro,19685,,,SU 45
+Skytop Rd,3,FFFFFF,D98C27,Centro,19684,,,SU 44
+Slocum Heights,3,FFFFFF,D98C27,Centro,19687,,,SU244
+East Campus,3,FFFFFF,D98C27,Centro,19686,,,SU243
+Bloomfield,3,FFFFFF,3C62AE,Centro,19681,,,Rome7
+Griffiss,3,FFFFFF,D98C27,Centro,19680,,,Rome6
+Waverly Ave,3,FFFFFF,D98C27,Centro,19683,,,SU 43
+Rome Hospital,3,FFFFFF,CD8ABB,Centro,19682,,,Rome9
+Lafayette - Tully,3,FFFFFF,38A848,Centro,19721,,,Sy510
+South Campus,3,FFFFFF,D98C27,Centro,19689,,,SU344
+Genesee St - Westcott St,3,FFFFFF,D98C27,Centro,19688,,,SU343
+New York Mills,3,FFFFFF,38A848,Centro,19753,,,Ut111
+Walmart via Brandonwood,3,000000,82D3F2,Centro,19669,,,Osw1D
+Turin St.,3,FFFFFF,7E3092,Centro,19678,,,Rome4
+Price Chopper,3,FFFFFF,38A848,Centro,19679,,,Rome5
+Oneida - Chadwicks,3,FFFFFF,CD8ABB,Centro,19752,,,Ut 31
+College via 104,3,000000,E0C94A,Centro,19670,,,Osw2A
+College via West Utica,3,FFFFFF,7E3092,Centro,19671,,,Osw2C
+College via Ellen St,3,FFFFFF,3C62AE,Centro,19672,,,Osw2D
+Oswego - Syracuse,3,000000,E0C94A,Centro,19673,,,Osw46
+WalMart,3,FFFFFF,ED2224,Centro,19677,,,Rome2
+Walmart via Seneca Street,3,FFFFFF,8AC767,Centro,19668,,,Osw1C
+James St,3,000000,E0C94A,Centro,19696,,,Sy 20
+South Ave,3,FFFFFF,CD8ABB,Centro,19697,,,Sy 26
+South Salina St - Nedrow,3,FFFFFF,38A848,Centro,19694,,,Sy 10
+North Salina St - Buckley Rd,3,FFFFFF,7E3092,Centro,19695,,,Sy 16
+Small Road,3,FFFFFF,D98C27,Centro,19692,,,SU444
+Syrculator,3,FFFFFF,008000,Centro,19693,,,Sy  8
+Thurber St,3,FFFFFF,D98C27,Centro,19690,,,SU345
+Connective Corridor,3,FFFFFF,D98C27,Centro,19691,,,SU443
+Westcott St - SU,3,FFFFFF,ED2224,Centro,19698,,,Sy 30
+Camillus,3,FFFFFF,CD8ABB,Centro,19699,,,Sy 36
+Herkimer Rd,3,FFFFFF,917164,Centro,19749,,,Ut 28
+North Street,3,FFFFFF,7E3092,Centro,19629,,,Aub 3
+Franklin,3,FFFFFF,3C62AE,Centro,19628,,,Aub 2
+West Genesee,3,FFFFFF,38A848,Centro,19627,,,Aub 1
+Randall Road,3,000000,E0C94A,Centro,19470,,,Sy942
+Bishop Grimes,3,000000,82D3F2,Centro,19471,,,Sy958
+North Syracuse - Central Square,3,000000,82D3F2,Centro,19454,,,Sy 88
+Wegmans Shopper,3,FFFFFF,38A848,Centro,19455,,,Sy 90
+Tops Shoppers,3,FFFFFF,ED2224,Centro,19456,,,Sy 92
+James St - Minoa,3,FFFFFF,ED2224,Centro,19457,,,Sy323
+Grant Blvd,3,FFFFFF,38A848,Centro,19450,,,Sy 80
+Baldwinsville,3,FFFFFF,ED2224,Centro,19451,,,Sy 82
+Mattydale,3,000000,E0C94A,Centro,19452,,,Sy 84
+Henry Clay Blvd,3,FFFFFF,8AC767,Centro,19453,,,Sy 86
+Lafayette - Tully,3,FFFFFF,38A848,Centro,19458,,,Sy510
+Orange Lot,3,FFFFFF,FF8000,Centro,19459,,,Sy582
+Clinton,3,FFFFFF,8AC767,Centro,19751,,,Ut 30
+Riverside Drive,3,FFFFFF,3C62AE,Centro,19750,,,Ut 29
+Fay Road,3,FFFFFF,38A848,Centro,19735,,,Sy966
+Bishop Grimes,3,000000,82D3F2,Centro,19734,,,Sy958
+Wilbur Ave,3,FFFFFF,ED2224,Centro,19737,,,Sy974
+Townsend,3,FFFFFF,ED2224,Centro,19736,,,Sy972
+East Genesee,3,FFFFFF,D98C27,Centro,19731,,,Sy930
+Glenwood,3,FFFFFF,7E3092,Centro,19730,,,Sy926
+Randall Road,3,000000,E0C94A,Centro,19733,,,Sy942
+Erie Blvd West,3,FFFFFF,3C62AE,Centro,19732,,,Sy936
+Skytop Rd,3,FFFFFF,D98C27,Centro,19421,,,SU 44
+Waverly Ave,3,FFFFFF,D98C27,Centro,19420,,,SU 43
+East Campus,3,FFFFFF,D98C27,Centro,19423,,,SU243
+SU - Destiny USA,3,FFFFFF,D98C27,Centro,19422,,,SU 45
+Genesee St - Westcott St,3,FFFFFF,D98C27,Centro,19425,,,SU343
+Slocum Heights,3,FFFFFF,D98C27,Centro,19424,,,SU244
+Thurber St,3,FFFFFF,D98C27,Centro,19427,,,SU345
+South Campus,3,FFFFFF,D98C27,Centro,19426,,,SU344
+Small Road,3,FFFFFF,D98C27,Centro,19429,,,SU444
+Connective Corridor,3,FFFFFF,D98C27,Centro,19428,,,SU443
+Whitesboro,3,FFFFFF,38A848,Centro,19742,,,Ut 11
+Bleeker St,3,FFFFFF,7E3092,Centro,19743,,,Ut 12
+Mohawk,3,000000,E0C94A,Centro,19744,,,Ut 14
+James Street,3,000000,82D3F2,Centro,19745,,,Ut 15
+Lenox - Business Park,3,FFFFFF,D98C27,Centro,19746,,,Ut 20
+South Street,3,FFFFFF,D98C27,Centro,19747,,,Ut 22
+Riverside Drive,3,FFFFFF,3C62AE,Centro,19487,,,Ut 29
+Herkimer Rd,3,FFFFFF,917164,Centro,19486,,,Ut 28
+Genesee Street,3,FFFFFF,ED2224,Centro,19485,,,Ut 24
+South Street,3,FFFFFF,D98C27,Centro,19484,,,Ut 22
+Lenox - Business Park,3,FFFFFF,D98C27,Centro,19483,,,Ut 20
+James Street,3,000000,82D3F2,Centro,19482,,,Ut 15
+Mohawk,3,000000,E0C94A,Centro,19481,,,Ut 14
+Bleeker St,3,FFFFFF,7E3092,Centro,19480,,,Ut 12
+State Fair - Hub,3,FFFFFF,FF8000,Centro,19726,,,Sy901
+Long Branch Park,3,FFFFFF,FF8000,Centro,19727,,,Sy907
+Solvay,3,000000,82D3F2,Centro,19724,,,Sy874
+Lakeview Park Special Events,3,FFFFFF,FF0000,Centro,19725,,,Sy882
+Orange Lot,3,FFFFFF,FF8000,Centro,19722,,,Sy582
+Willis Ave Lot,3,FFFFFF,FF8000,Centro,19723,,,Sy782
+Oneida - Chadwicks,3,FFFFFF,CD8ABB,Centro,19489,,,Ut 31
+Clinton,3,FFFFFF,8AC767,Centro,19488,,,Ut 30
+North Salina St - Buckley Rd,3,FFFFFF,7E3092,Centro,19432,,,Sy 16
+James St,3,000000,E0C94A,Centro,19433,,,Sy 20
+Syrculator,3,FFFFFF,008000,Centro,19430,,,Sy  8
+South Salina St - Nedrow,3,FFFFFF,38A848,Centro,19431,,,Sy 10
+Camillus,3,FFFFFF,CD8ABB,Centro,19436,,,Sy 36
+Drumlins - Nob Hill,3,FFFFFF,917164,Centro,19437,,,Sy 40
+South Ave,3,FFFFFF,CD8ABB,Centro,19434,,,Sy 26
+Westcott St - SU,3,FFFFFF,ED2224,Centro,19435,,,Sy 30
+Liverpool - Route 57,3,000000,E0C94A,Centro,19438,,,Sy 46
+Liverpool - Morgan Rd,3,FFFFFF,8AC767,Centro,19439,,,Sy 48
+State Street,3,FFFFFF,D98C27,Centro,19630,,,Aub 4

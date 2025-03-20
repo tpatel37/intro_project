@@ -1,0 +1,2 @@
+agency_phone,agency_fare_url,agency_url,agency_id,agency_name,agency_timezone,agency_lang
+315-442-3400,http://www.centro.org,http://www.centro.org,Centro,Centro,America/New_York,en
