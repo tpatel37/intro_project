@@ -1,9 +1,13 @@
 <h1><%= @bus_route.name %> (Route Number: <%= @bus_route.route_number %>)</h1>
+<p>City: <%= @bus_route.city.name %> (<a href="<%= city_path(@bus_route.city) %>">View City</a>)</p>
 
 <h2>Stops on this Route:</h2>
 <ul>
   <% @bus_route.stops.each do |stop| %>
-    <li><%= stop.name %> - (<%= stop.latitude %>, <%= stop.longitude %>)</li>
+    <li>
+      <%= stop.name %> - (<%= stop.latitude %>, <%= stop.longitude %>)
+      <a href="<%= stop_path(stop) %>">View Stop</a>
+    </li>
   <% end %>
 </ul>
 

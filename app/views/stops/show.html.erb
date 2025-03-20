@@ -5,7 +5,10 @@
 <h2>Routes Passing This Stop:</h2>
 <ul>
   <% @stop.bus_routes.each do |route| %>
-    <li><%= route.name %> (Route Number: <%= route.route_number %>)</li>
+    <li>
+      <%= route.name %> (Route Number: <%= route.route_number %>)
+      <a href="<%= bus_route_path(route) %>">View Route</a>
+    </li>
   <% end %>
 </ul>
 
