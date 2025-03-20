@@ -1,20 +1,23 @@
-<h1>Bus Route: <%= @bus_route.name %></h1>
-<p>Route Number: <%= @bus_route.route_number %></p>
+<% if @bus_route.present? %>
+  <h1>Bus Route: <%= @bus_route.name %></h1>
+  <p>Route Number: <%= @bus_route.route_number %></p>
+<% else %>
+  <h1>All Bus Stops</h1>
+<% end %>
 
-<h2>Stops for this Route</h2>
-<% if @bus_route.stops.any? %>
+<h2>Stops List</h2>
+<% if @stops.any? %>
   <ul>
-    <% @bus_route.stops.each do |stop| %>
+    <% @stops.each do |stop| %>
       <li>
         <%= stop.name %> - (<%= stop.latitude %>, <%= stop.longitude %>)
-        <a href="<%= stop_path(stop) %>">View Stop</a>
+        <a href="<%= stop_path(stop) %>">View Details</a>
       </li>
     <% end %>
   </ul>
-  <!-- Pagination Links for Stops -->
-  <%= paginate @stops %>
 <% else %>
-  <p>No stops available for this route.</p>
+  <p>No stops available.</p>
 <% end %>
 
-<a href="/bus_routes">Back to Bus Routes</a>
+<!-- Pagination -->
+<%= paginate @stops %>

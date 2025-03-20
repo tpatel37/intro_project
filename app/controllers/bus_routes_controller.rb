@@ -1,11 +1,14 @@
 class BusRoutesController < ApplicationController
   def index
-    @bus_routes = BusRoute.page(params[:page]).per(5)  # Show 5 routes per page
+    @bus_routes = BusRoute.includes(:city, :transit_agency, :stops).all
   end
 
   def show
-    @bus_route = BusRoute.find(params[:id])
-    @transit_agency = @bus_route.transit_agency
-    @stops = @bus_route.stops.page(params[:page]).per(5) # Paginate stops in a route
+    @bus_route = BusRoute.includes(:city, :transit_agency, :stops).find_by(id: params[:id])
+
+    if @bus_route.nil?
+      flash[:alert] = "Bus route not found."
+      redirect_to bus_routes_path
+    end
   end
 end

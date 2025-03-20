@@ -1,27 +1,35 @@
-<div class="container mt-4">
-  <h1 class="mb-3"><%= @bus_route.name %> (Route Number: <%= @bus_route.route_number %>)</h1>
+<h1><%= @bus_route.name.present? ? @bus_route.name : "Unnamed Route" %> 
+   (Route Number: <%= @bus_route.route_number.present? ? @bus_route.route_number : "N/A" %>)</h1>
 
-  <h2 class="mt-4">Cities Covered by This Route</h2>
-  <p><strong>City:</strong> <%= @bus_route.city.name %></p>
+<% if @bus_route.city.present? %>
+  <p>City: <%= @bus_route.city.name %> 
+  (<a href="<%= city_path(@bus_route.city) %>">View City</a>)</p>
+<% else %>
+  <p>City: Not Assigned</p>
+<% end %>
 
-  <h2 class="mt-4">Stops on This Route</h2>
+<% if @bus_route.transit_agency.present? %>
+  <p>Transit Agency: <%= @bus_route.transit_agency.name %> 
+    (<a href="<%= transit_agency_path(@bus_route.transit_agency) %>">View Agency</a>)</p>
+<% else %>
+  <p>No transit agency assigned to this route.</p>
+<% end %>
 
-  <% if @bus_route.stops.any? %>
-    <ul class="list-group">
-      <% @bus_route.stops.each do |stop| %>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-          <span>
-            <%= stop.name %> (Latitude: <%= stop.latitude %>, Longitude: <%= stop.longitude %>)
-          </span>
-          <%= link_to "View Stop", stop_path(stop), class: "btn btn-primary btn-sm" %>
-        </li>
-      <% end %>
-    </ul>
-  <% else %>
-    <p class="alert alert-warning">No stops assigned to this route.</p>
-  <% end %>
+<h2>Stops on this Route:</h2>
+<% if @bus_route.stops.present? && @bus_route.stops.any? %>
+  <ul>
+    <% @bus_route.stops.each do |stop| %>
+      <li>
+        <%= stop.name.present? ? stop.name : "Unnamed Stop" %> 
+        - (<%= stop.latitude.present? ? stop.latitude : "Unknown" %>, 
+           <%= stop.longitude.present? ? stop.longitude : "Unknown" %>)
+        <a href="<%= stop_path(stop) %>">View Stop</a>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No stops available for this route.</p>
+<% end %>
 
-  <div class="mt-3">
-    <%= link_to "Back to Bus Routes", bus_routes_path, class: "btn btn-secondary" %>
-  </div>
-</div>
+<!-- Pagination Links -->
+<%= paginate @bus_routes if @bus_routes.respond_to?(:total_pages) %>

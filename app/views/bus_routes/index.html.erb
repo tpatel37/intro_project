@@ -1,26 +1,35 @@
-<h1><%= @bus_route.name %> (Route Number: <%= @bus_route.route_number %>)</h1>
-<p>City: <%= @bus_route.city.name %> (<a href="<%= city_path(@bus_route.city) %>">View City</a>)</p>
+<h1>All Bus Routes</h1>
 
-<% if @bus_route.transit_agency.present? %>
-  <p>Transit Agency: <%= @bus_route.transit_agency.name %> 
-    (<a href="<%= transit_agency_path(@bus_route.transit_agency) %>">View Agency</a>)</p>
-<% else %>
-  <p>No transit agency assigned to this route.</p>
-<% end %>
-
-<h2>Stops on this Route:</h2>
-<% if @bus_route.stops.any? %>
+<% if @bus_routes.any? %>
   <ul>
-    <% @bus_route.stops.each do |stop| %>
+    <% @bus_routes.each do |bus_route| %>
       <li>
-        <%= stop.name %> - (<%= stop.latitude %>, <%= stop.longitude %>)
-        <a href="<%= stop_path(stop) %>">View Stop</a>
+        <%= bus_route.name.present? ? bus_route.name : "Unnamed Route" %> 
+        (Route Number: <%= bus_route.route_number.present? ? bus_route.route_number : "N/A" %>)
+
+        <% if bus_route.city.present? %>
+          <p>City: <%= bus_route.city.name %> 
+            (<a href="<%= city_path(bus_route.city) %>">View City</a>)
+          </p>
+        <% else %>
+          <p>City: Not Assigned</p>
+        <% end %>
+
+        <% if bus_route.transit_agency.present? %>
+          <p>Transit Agency: <%= bus_route.transit_agency.name %> 
+            (<a href="<%= transit_agency_path(bus_route.transit_agency) %>">View Agency</a>)
+          </p>
+        <% else %>
+          <p>No transit agency assigned to this route.</p>
+        <% end %>
+
+        <a href="<%= bus_route_path(bus_route) %>">View Route</a>
       </li>
     <% end %>
   </ul>
 <% else %>
-  <p>No stops available for this route.</p>
+  <p>No bus routes available.</p>
 <% end %>
 
 <!-- Pagination Links -->
-<%= paginate @bus_routes %>
+<%= paginate @bus_routes if @bus_routes.respond_to?(:total_pages) %>
