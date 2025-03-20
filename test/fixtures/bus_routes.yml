@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  route_number: MyString
+  city: one
+
+two:
+  name: MyString
+  route_number: MyString
+  city: two

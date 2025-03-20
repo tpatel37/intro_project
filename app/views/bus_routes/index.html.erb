@@ -1,0 +1,6 @@
+<h1>All Bus Routes</h1>
+<ul>
+  <% @bus_routes.each do |route| %>
+    <li><%= route.name %> (Route Number: <%= route.route_number %>)</li>
+  <% end %>
+</ul>

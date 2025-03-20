@@ -18,6 +18,28 @@
   </head>
 
   <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/cities">Cities</a></li>
+        <li><a href="/bus_routes">Bus Routes</a></li>
+        <li><a href="/stops">Bus Stops</a></li>
+      </ul>
+      
+      <!-- Search Form -->
+      <form action="/search" method="get">
+        <input type="text" name="query" placeholder="Search">
+        <select name="category">
+          <option value="all">All</option>
+          <option value="cities">Cities</option>
+          <option value="bus_routes">Bus Routes</option>
+          <option value="stops">Bus Stops</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+    </nav>
+
     <%= yield %>
   </body>
 </html>
