@@ -1,13 +1,23 @@
 <h1><%= @bus_route.name %> (Route Number: <%= @bus_route.route_number %>)</h1>
 <p>City: <%= @bus_route.city.name %> (<a href="<%= city_path(@bus_route.city) %>">View City</a>)</p>
 
+<% if @bus_route.transit_agency.present? %>
+  <p>Transit Agency: <%= @bus_route.transit_agency.name %> (<a href="<%= transit_agency_path(@bus_route.transit_agency) %>">View Agency</a>)</p>
+<% else %>
+  <p>No transit agency assigned to this route.</p>
+<% end %>
+
 <h2>Stops on this Route:</h2>
 <ul>
-  <% @bus_route.stops.each do |stop| %>
-    <li>
-      <%= stop.name %> - (<%= stop.latitude %>, <%= stop.longitude %>)
-      <a href="<%= stop_path(stop) %>">View Stop</a>
-    </li>
+  <% if @bus_route.stops.any? %>
+    <% @bus_route.stops.each do |stop| %>
+      <li>
+        <%= stop.name %> - (<%= stop.latitude %>, <%= stop.longitude %>)
+        <a href="<%= stop_path(stop) %>">View Stop</a>
+      </li>
+    <% end %>
+  <% else %>
+    <p>No stops available for this route.</p>
   <% end %>
 </ul>
 

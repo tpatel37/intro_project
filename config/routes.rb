@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get "transit_agencies/index"
+  get "transit_agencies/show"
   # Set homepage to the About page
   root "pages#about"
 
