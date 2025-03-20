@@ -1,2 +1,12 @@
-<h1>Cities#show</h1>
-<p>Find me in app/views/cities/show.html.erb</p>
+<h1><%= @city.name %></h1>
+<p>State: <%= @city.state %></p>
+<p>Country: <%= @city.country %></p>
+
+<h2>Bus Routes in <%= @city.name %></h2>
+<ul>
+  <% @city.bus_routes.each do |route| %>
+    <li><%= route.name %> (Route Number: <%= route.route_number %>)</li>
+  <% end %>
+</ul>
+
+<a href="/cities">Back to Cities</a>

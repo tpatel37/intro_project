@@ -1,2 +1,12 @@
-<h1>Stops#show</h1>
-<p>Find me in app/views/stops/show.html.erb</p>
+<h1>Stop: <%= @stop.name %></h1>
+<p>Latitude: <%= @stop.latitude %></p>
+<p>Longitude: <%= @stop.longitude %></p>
+
+<h2>Routes Passing This Stop:</h2>
+<ul>
+  <% @stop.bus_routes.each do |route| %>
+    <li><%= route.name %> (Route Number: <%= route.route_number %>)</li>
+  <% end %>
+</ul>
+
+<a href="/stops">Back to Stops</a>

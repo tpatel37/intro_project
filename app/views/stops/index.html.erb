@@ -1,6 +1,9 @@
 <h1>All Bus Stops</h1>
 <ul>
   <% @stops.each do |stop| %>
-    <li><%= stop.name %> - (<%= stop.latitude %>, <%= stop.longitude %>)</li>
+    <li>
+      <%= stop.name %> - (<%= stop.latitude %>, <%= stop.longitude %>)
+      <a href="<%= stop_path(stop) %>">View Details</a>
+    </li>
   <% end %>
 </ul>
