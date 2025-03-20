@@ -1,2 +1,26 @@
-<h1>TransitAgencies#index</h1>
-<p>Find me in app/views/transit_agencies/index.html.erb</p>
+<h1 class="text-center">🚍 Transit Agencies</h1>
+
+<% if @transit_agencies.any? %>
+  <div class="row">
+    <% @transit_agencies.each do |agency| %>
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h4 class="card-title"><%= agency.name %></h4>
+            <p class="card-text"><strong>Country:</strong> <%= agency.country %></p>
+            <a href="<%= transit_agency_path(agency) %>" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <!-- Pagination -->
+  <div class="d-flex justify-content-center">
+    <%= paginate @transit_agencies %>
+  </div>
+<% else %>
+  <p class="text-center">No transit agencies found.</p>
+<% end %>
+
+<a href="<%= root_path %>" class="btn btn-secondary">Back to Home</a>

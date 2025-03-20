@@ -1,0 +1,111 @@
+<h1 class="text-center"> Transportation Tracker</h1>
+
+<p class="text-center">
+  Welcome to <strong>Transportation Tracker</strong>, your go-to platform for exploring city bus routes, stops, 
+  and transit agency details. Our data sources provide a mix of real-world transit data, randomized test data, 
+  and manually curated routes.
+</p>
+
+<hr>
+
+<h2>📊 Data Sources</h2>
+
+<div class="row">
+  <div class="col-md-3">
+    <div class="card text-center">
+      <div class="card-body">
+        <h4 class="card-title"> Faker-Generated Data</h4>
+        <p class="card-text">
+          Simulated city, route, and stop data created for testing and development.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card text-center">
+      <div class="card-body">
+        <h4 class="card-title"> GTFS CSV Data</h4>
+        <p class="card-text">
+          Real-world transit stop data sourced from <a href="https://transitfeeds.com/" target="_blank">TransitFeeds.com</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card text-center">
+      <div class="card-body">
+        <h4 class="card-title"> Manually Added Data</h4>
+        <p class="card-text">
+          Custom cities, bus routes, and stops that complement the dataset for accuracy.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card text-center">
+      <div class="card-body">
+        <h4 class="card-title"> Transit Agencies</h4>
+        <p class="card-text">
+          Browse transit agencies managing public transportation.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<h2>Explore Transit Data</h2>
+
+<div class="row">
+  <div class="col-md-3">
+    <div class="card text-center">
+      <div class="card-body">
+        <h4 class="card-title">🏙 Cities</h4>
+        <p class="card-text">Browse available cities with bus routes.</p>
+        <a href="<%= cities_path %>" class="btn btn-primary">View Cities</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card text-center">
+      <div class="card-body">
+        <h4 class="card-title">🚌 Bus Routes</h4>
+        <p class="card-text">Check available bus routes and their details.</p>
+        <a href="<%= bus_routes_path %>" class="btn btn-primary">View Routes</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card text-center">
+      <div class="card-body">
+        <h4 class="card-title">🚏 Bus Stops</h4>
+        <p class="card-text">Find stops along different bus routes.</p>
+        <a href="<%= stops_path %>" class="btn btn-primary">View Stops</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card text-center">
+      <div class="card-body">
+        <h4 class="card-title">🏢 Transit Agencies</h4>
+        <p class="card-text">View transit agencies managing bus routes.</p>
+        <a href="<%= transit_agencies_path %>" class="btn btn-primary">View Agencies</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<h2> Get Started</h2>
+<p>
+  Use the navigation bar to browse transit data. If you want more details, 
+  visit the <a href="<%= about_path %>">About Page</a>.
+</p>

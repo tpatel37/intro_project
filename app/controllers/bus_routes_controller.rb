@@ -1,6 +1,6 @@
 class BusRoutesController < ApplicationController
   def index
-    @bus_routes = BusRoute.includes(:city, :transit_agency, :stops).all
+    @bus_routes = BusRoute.includes(:city, :transit_agency, :stops).page(params[:page]).per(5)
   end
 
   def show

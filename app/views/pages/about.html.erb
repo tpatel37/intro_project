@@ -1,9 +1,131 @@
-<h1>About Public Transportation Tracker</h1>
-<p>This application allows users to view public transportation data, including cities, bus routes, and stops.</p>
+<h1>About Transportation Tracker</h1>
 
-<h2>Data Sources</h2>
+<p>
+  The <strong>Transportation Tracker</strong> project integrates multiple datasets to provide detailed 
+  information on cities, bus routes, and stops. This project is built using Rails and PostgreSQL, 
+  and it includes real-world transit data as well as synthetic test data.
+</p>
+
+<h2>Data Sources Used</h2>
+<p>The project utilizes <strong>three main data sources</strong>:</p>
+<ol>
+  <li><strong>Faker-Generated Dataset</strong> (Randomized Fake Data)</li>
+  <li><strong>GTFS CSV Data</strong> (Downloaded from <a href="https://transitfeeds.com/" target="_blank">TransitFeeds.com</a>)</li>
+  <li><strong>Manually Added Data</strong> (Custom Cities, Bus Routes, and Stops)</li>
+</ol>
+
+<hr>
+
+<h3>Faker-Generated Dataset</h3>
+<p>
+  This dataset is generated using the Faker gem in <code>db/seeds.rb</code>. It provides random but realistic city, 
+  route, and stop data for development and testing purposes.
+</p>
+
+<strong>Data Structure:</strong>
 <ul>
-  <li>Live Transit API: <a href="https://www.transit.land/" target="_blank">Transit Land API</a></li>
-  <li>CSV Data: <a href="https://transitfeeds.com/" target="_blank">Transit Feeds</a></li>
-  <li>Faker: Used to generate test data for development.</li>
+  <li><strong>City:</strong> Name, State, Country</li>
+  <li><strong>BusRoute:</strong> Name, Route Number, City ID</li>
+  <li><strong>Stop:</strong> Name, Latitude, Longitude</li>
 </ul>
+
+<strong>Example Faker Data:</strong>
+<ul>
+  <li><strong>City:</strong> "Port Rudolf", "Beahaven ", "Patsyhaven"</li>
+  <li><strong>Bus Route:</strong> "597 Alta Radial", "Martin Neck"</li>
+  <li><strong>Stop:</strong> "E Genesee St & Town Hall Rd", "S Midler Ave & Glencove Rd"</li>
+</ul>
+
+<strong>Purpose:</strong> Provides dummy data for development and testing.
+
+<hr>
+
+<h3>GTFS CSV Data (Real-World Transit Data)</h3>
+<p>
+  The <strong>General Transit Feed Specification (GTFS)</strong> dataset was downloaded from 
+  <a href="https://transitfeeds.com/" target="_blank">TransitFeeds.com</a> and includes real transit stop data.
+</p>
+
+<strong>Data Structure:</strong>
+<ul>
+  <li><strong>stop_id:</strong> Unique ID of the stop</li>
+  <li><strong>stop_name:</strong> Stop name (e.g., "Union Station")</li>
+  <li><strong>stop_lat:</strong> Latitude (e.g., 43.645)</li>
+  <li><strong>stop_lon:</strong> Longitude (e.g., -79.3807)</li>
+</ul>
+
+<strong>Example from <code>stops.csv</code>:</strong>
+<pre>
+stop_id,stop_name,stop_lat,stop_lon
+1001,Union Station,43.645,-79.3807
+1002,Main Street,43.70011,-79.4163
+</pre>
+
+<strong>Purpose:</strong> Enhances accuracy by using real-world transit data.
+
+<hr>
+
+<h3>Manually Added Data</h3>
+<p>
+  Additional data, such as specific bus routes, stops, and agencies, were manually created to complement Faker and GTFS data.
+</p>
+
+<strong>Example of Manually Added Data:</strong>
+<ul>
+  <li><strong>City:</strong> "Kent"</li>
+  <li><strong>Bus Route:</strong> "Downtown Loop" (Route #101)</li>
+  <li><strong>Stop:</strong> "King & Bay"</li>
+</ul>
+
+<strong>Purpose:</strong> Complements Faker and GTFS data with controlled test data.
+
+<hr>
+
+<h2>Summary of Data Sources</h2>
+<table>
+  <tr>
+    <th>Data Source</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><strong>Faker</strong></td>
+    <td>Randomized cities, routes, and stops for development & testing.</td>
+  </tr>
+  <tr>
+    <td><strong>GTFS CSV</strong></td>
+    <td>Real transit stops (latitude/longitude) for accuracy & realism.</td>
+  </tr>
+  <tr>
+    <td><strong>Manual</strong></td>
+    <td>Predefined cities, routes, stops for controlled test cases.</td>
+  </tr>
+</table>
+
+<hr>
+
+<h2>Where is the Data Stored?</h2>
+<ul>
+  <li><strong>Database:</strong> PostgreSQL (via ActiveRecord)</li>
+  <li><strong>Files:</strong>
+    <ul>
+      <li><code>db/seeds.rb</code> → Generates Faker & GTFS data</li>
+      <li><code>lib/assets/gtfs_data/stops.csv</code> → Stores GTFS stop data</li>
+    </ul>
+  </li>
+</ul>
+
+<hr>
+
+<h2>Final Check: Verifying Your Data</h2>
+<p>To confirm that all datasets are properly loaded, run the following in the Rails console:</p>
+
+<pre>
+rails console
+City.count        # Should return 50
+BusRoute.count    # Should return 50
+Stop.count        # Should return (70 + CSV data)
+BusRouteStop.count # Stops assigned to routes
+</pre>
+
+
+

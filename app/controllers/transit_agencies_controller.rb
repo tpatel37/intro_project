@@ -1,10 +1,9 @@
 class TransitAgenciesController < ApplicationController
   def index
-    @transit_agencies = TransitAgency.all
+    @transit_agencies = TransitAgency.page(params[:page]).per(5)
   end
 
   def show
     @transit_agency = TransitAgency.find(params[:id])
-    @bus_routes = @transit_agency.bus_routes
   end
 end
