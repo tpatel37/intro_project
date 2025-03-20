@@ -32,5 +32,5 @@ class SearchController < ApplicationController
         @stops = route.stops if route
       end
     end
-  end
+  
   

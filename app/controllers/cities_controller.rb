@@ -8,4 +8,3 @@ class CitiesController < ApplicationController
     @bus_routes = @city.bus_routes.page(params[:page]).per(20) # Paginate routes in a city
   end
 end
-1234567890
