@@ -5,6 +5,7 @@ class BusRoutesController < ApplicationController
 
   def show
     @bus_route = BusRoute.find(params[:id])
+    @transit_agency = @bus_route.transit_agency
     @stops = @bus_route.stops.page(params[:page]).per(5) # Paginate stops in a route
   end
 end
