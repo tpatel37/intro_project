@@ -1,18 +1,26 @@
-<h1>Stop: <%= @stop.name %></h1>
-<p>Latitude: <%= @stop.latitude %></p>
-<p>Longitude: <%= @stop.longitude %></p>
+<div class="container mt-4">
+  <h1 class="mb-3"><%= @stop.name %></h1>
+  <p><strong>Latitude:</strong> <%= @stop.latitude %></p>
+  <p><strong>Longitude:</strong> <%= @stop.longitude %></p>
 
-<h2>Routes Passing This Stop:</h2>
-<% if @stop.bus_routes.any? %>
-  <ul>
-    <% @stop.bus_routes.each do |route| %>
-      <li>
-        <%= route.name %> (Route Number: <%= route.route_number %>)
-        <a href="<%= bus_route_path(route) %>">View Route</a>
-      </li>
-    <% end %>
-  </ul>
-<% else %>
-  <p>No routes pass through this stop.</p>
-<% end %>
-<a href="/stops">Back to Stops</a>
+  <h2 class="mt-4">Bus Routes Passing Through <%= @stop.name %></h2>
+
+  <% if @stop.bus_routes.any? %>
+    <ul class="list-group">
+      <% @stop.bus_routes.each do |route| %>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span>
+            <%= route.name %> (Route Number: <%= route.route_number %>)
+          </span>
+          <%= link_to "View Route", bus_route_path(route), class: "btn btn-primary btn-sm" %>
+        </li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p class="alert alert-warning">No bus routes currently stop here.</p>
+  <% end %>
+
+  <div class="mt-3">
+    <%= link_to "Back to Bus Stops", stops_path, class: "btn btn-secondary" %>
+  </div>
+</div>

@@ -64,3 +64,5 @@ gem "faker", "~> 3.5"
 gem "kaminari", "~> 1.2"
 
 gem "bootstrap", "~> 5.3"
+
+gem "sassc-rails", "~> 2.1"
