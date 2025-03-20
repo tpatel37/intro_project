@@ -75,12 +75,17 @@ GEM
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
     ast (2.4.2)
+    autoprefixer-rails (10.4.19.0)
+      execjs (~> 2)
     base64 (0.2.0)
     benchmark (0.4.0)
     bigdecimal (3.1.9)
     bindex (0.8.1)
     bootsnap (1.18.4)
       msgpack (~> 1.2)
+    bootstrap (5.3.3)
+      autoprefixer-rails (>= 9.1.0)
+      popper_js (>= 2.11.8, < 3)
     brakeman (7.0.0)
       racc
     builder (3.3.0)
@@ -103,6 +108,7 @@ GEM
     drb (2.2.1)
     error_highlight (0.7.0)
     erubi (1.13.1)
+    execjs (2.10.0)
     faker (3.5.1)
       i18n (>= 1.8.11, < 2)
     globalid (1.2.1)
@@ -181,6 +187,7 @@ GEM
       ast (~> 2.4.1)
       racc
     pg (1.5.9)
+    popper_js (2.11.8)
     pp (0.6.2)
       prettyprint
     prettyprint (0.2.0)
@@ -320,6 +327,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  bootstrap (~> 5.3)
   brakeman
   capybara
   debug
